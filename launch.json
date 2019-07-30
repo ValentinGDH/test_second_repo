@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "BC Docker",
+            "server": "http://BusinessCentral", // commenter pour publier
+            "serverInstance": "NAV",
+            "authentication": "UserPassword",
+            "breakOnError": true,
+            "schemaUpdateMode": "Recreate" // supprime toutes les données
+        },
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "BC Mode SAAS",
+            "authentication": "AAD",
+            "breakOnError": true
+            //"schemaUpdateMode": "Recreate" // supprime toutes les données
+        }
+    ]
+}
